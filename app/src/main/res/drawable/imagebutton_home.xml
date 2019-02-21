@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--底部导航栏首页按钮选择器（更换图片）-->
+    <item android:state_pressed="true" android:drawable="@drawable/dianzhongdeshouye" />
+    <item android:state_enabled="false" android:drawable="@drawable/shouye"/>
+    <item android:state_selected="true" android:drawable="@drawable/dianzhongdeshouye"/>
+</selector>
