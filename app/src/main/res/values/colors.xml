@@ -6,4 +6,5 @@
     <color name="bg_white">#ffffff</color>
     <color name="bg_home">#f2f2f2</color>
     <color name="text_home">#333333</color>
+    <color name="text_person">#fefefe</color>
 </resources>

@@ -6,16 +6,18 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/ll__home_toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/shape_toolbar">
-
+        android:background="@drawable/shape_toolbar"
+        android:orientation="horizontal">
     </LinearLayout>
     <FrameLayout
         android:id="@+id/main_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/ll_navigation"
+        android:layout_below="@+id/ll__home_toolbar"
         >
         <fragment
             android:id="@+id/fragment_home"

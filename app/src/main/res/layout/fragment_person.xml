@@ -1,6 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_bg_person"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/shape_toolbar"
+        android:orientation="horizontal" />
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/riv_head"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:scaleType="fitCenter"
+        app:riv_oval="true"
+        android:src="@mipmap/head"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        />
+    <TextView
+        android:id="@+id/tv_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/riv_head"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"
+        android:textColor="@color/text_person"
+        android:text="江晶晶"
+        />
+    <TextView
+        android:id="@+id/tv_person_student_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_person_name"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/text_person"
+        android:text="16310320635"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_note"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/ll_bg_person"
+        android:layout_marginTop="14dp"
+        android:elevation="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_corners_white">
+
+        <ImageView
+            android:id="@+id/iv_person_note"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/records"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"/>
+        <TextView
+            android:id="@+id/tv_person_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/note"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_person_note"
+            android:layout_marginLeft="23dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_note_person_more"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_more"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/rl_note"
+        android:layout_marginTop="6dp"
+        android:elevation="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_corners_white">
+
+        <ImageView
+            android:id="@+id/iv_person_setting"
+            android:layout_width="15dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/settings"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"/>
+        <TextView
+            android:id="@+id/tv_person_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting"
+            android:textSize="20sp"
+            android:textColor="#333"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_person_setting"
+            android:layout_marginLeft="23dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_setting_person_more"
+            android:layout_width="10dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_more"
+            android:background="@null"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

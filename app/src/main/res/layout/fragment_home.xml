@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="签到"
+            android:text="课堂"
             android:textSize="22sp"
             android:textColor="@color/text_home"
             android:layout_below="@+id/ib_class"

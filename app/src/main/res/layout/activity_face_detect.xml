@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FaceDetectActivity">
+    <LinearLayout
+        android:id="@+id/ll__face_detect_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_toolbar"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bg_face_detect"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@mipmap/card"
+        android:layout_below="@+id/ll__face_detect_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp">
+
+       <com.makeramen.roundedimageview.RoundedImageView
+           android:layout_width="160dp"
+           android:layout_height="160dp"
+           android:scaleType="fitCenter"
+           app:riv_oval="true"
+           android:src="#d4b9b9"
+           android:layout_marginLeft="100dp"
+           android:layout_marginTop="80dp"
+           />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="拍照"
+            android:textSize="25sp"
+            android:textColor="#797474"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
