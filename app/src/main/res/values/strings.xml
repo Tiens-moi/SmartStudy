@@ -2,4 +2,8 @@
     <string name="app_name">SmartStudy</string>
     <string name="note">笔记</string>
     <string name="setting">设置</string>
+    <string name="sign_success">签到成功！</string>
+    <string name="sign_failed">签到失败！</string>
+    <string name="sign_detect_percent">100%</string>
+    <string name="sign_detect_over">人脸识别完成</string>
 </resources>

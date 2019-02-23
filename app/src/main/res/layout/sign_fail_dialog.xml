@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="534dp"
+    android:background="#00000000">
+    <RelativeLayout
+        android:id="@+id/rl_sign_fail_card"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_corners_white">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/lie"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_failed"
+            android:textColor="@color/text_sign_failed"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/ib_sign_fail_cancel"
+        android:layout_below="@+id/rl_sign_fail_card"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/butongyi"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+</RelativeLayout>

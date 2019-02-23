@@ -8,16 +8,18 @@
     <LinearLayout
         android:id="@+id/ll__face_detect_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:background="@drawable/shape_toolbar"
         android:orientation="horizontal">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/ib_face_return"
+            android:layout_width="14dp"
+            android:layout_height="25dp"
             android:background="@mipmap/back"
             android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
             />
     </LinearLayout>
 
@@ -31,6 +33,7 @@
         android:layout_margin="25dp">
 
        <com.makeramen.roundedimageview.RoundedImageView
+           android:id="@+id/riv_face_bg"
            android:layout_width="160dp"
            android:layout_height="160dp"
            android:scaleType="fitCenter"
@@ -40,6 +43,7 @@
            android:layout_marginTop="80dp"
            />
         <Button
+            android:id="@+id/bt_face_camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
@@ -48,6 +52,30 @@
             android:textColor="#797474"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_sign_detect_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_detect_percent"
+            android:textSize="24sp"
+            android:textColor="@color/text_home"
+            android:layout_below="@+id/bt_face_camera"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/tv_sign_detect_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_detect_over"
+            android:textSize="15sp"
+            android:textColor="@color/text_sign_detect_percent"
+            android:layout_below="@+id/tv_sign_detect_percent"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+
     </RelativeLayout>
 
 </RelativeLayout>

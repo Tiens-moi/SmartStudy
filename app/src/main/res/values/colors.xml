@@ -7,4 +7,9 @@
     <color name="bg_home">#f2f2f2</color>
     <color name="text_home">#333333</color>
     <color name="text_person">#fefefe</color>
+    <color name="text_sign_success">#333333</color>
+    <color name="text_sign_failed">#666666</color>
+    <color name="text_sign_detect_percent">#555555</color>
+    <color name="transparent">#00000000</color>
+
 </resources>
