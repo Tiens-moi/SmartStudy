@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.elevisjang.smartstudy.R;
 import com.elevisjang.smartstudy.activity.FaceDetectActivity;
+import com.elevisjang.smartstudy.activity.MyClass;
 
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
@@ -43,9 +44,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 jump2FaceDetectActivity();
                 break;
             case R.id.ib_class:
-
+                JumpToSelfClassActivity();
                 break;
         }
+    }
+
+    private void JumpToSelfClassActivity() {
+        Intent intent = new Intent(getActivity(),MyClass.class);
+        startActivity(intent);
     }
 
     private void jump2FaceDetectActivity(){

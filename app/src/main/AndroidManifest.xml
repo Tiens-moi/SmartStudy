@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.FaceDetectActivity"></activity>
+        <activity android:name=".activity.FaceDetectActivity" />
+        <activity android:name=".activity.NoteLibsActivity" />
+        <activity android:name=".activity.CourseVoice" />
+        <activity android:name=".activity.MyClass"></activity>
     </application>
 
 </manifest>
