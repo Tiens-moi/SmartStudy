@@ -30,8 +30,8 @@ public class MyClass extends AppCompatActivity {
     private void getData() {
 
         ClassInformation classInformation = new ClassInformation();
-        classInformation.setClassName("");
-        classInformation.setTeacherName("");
+        classInformation.setClassName("网络互联技术");
+        classInformation.setTeacherName("赵荷");
         classInformations.add(classInformation);
     }
 }
