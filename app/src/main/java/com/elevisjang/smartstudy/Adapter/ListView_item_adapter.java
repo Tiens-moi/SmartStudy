@@ -2,20 +2,27 @@ package com.elevisjang.smartstudy.Adapter;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.elevisjang.smartstudy.R;
 import com.elevisjang.smartstudy.activity.ClassInformation;
+import com.elevisjang.smartstudy.activity.CourseVoice;
+import com.elevisjang.smartstudy.activity.FaceDetectActivity;
+import com.elevisjang.smartstudy.activity.MyClass;
 
 import java.util.ArrayList;
 
-public class ListView_item_adapter extends BaseAdapter {
+public class ListView_item_adapter extends BaseAdapter{
 
     ArrayList<ClassInformation> classInformations;
     LayoutInflater inflater;
@@ -43,9 +50,10 @@ public class ListView_item_adapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent){
+    public View getView(final int position, View convertView, ViewGroup parent){
         ClassInformation classInformation = classInformations.get(position);
         ViewHolder holder;
+
 
         if(convertView == null){
             holder = new ViewHolder();
@@ -63,8 +71,14 @@ public class ListView_item_adapter extends BaseAdapter {
         return convertView;
     }
 
+
+
+
     private class ViewHolder {
         TextView Classtv;
         TextView Teatv;
     }
+
+
+
 }
